@@ -1,9 +1,9 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 
-const Contact = () => {
+const Skills = () => {
   return (
-    <div className="contactPage">
+    <div className="skillsPage">
       <div>
         <NavBar />
       </div>
@@ -11,4 +11,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Skills;
