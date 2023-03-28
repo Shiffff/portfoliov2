@@ -6,12 +6,14 @@ import About from "./pages/About";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
+import NavBarMobile from "./components/NavBarMobile";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <NavBar  />
+        <NavBar />
+        <NavBarMobile />
         <Routes>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -23,6 +25,6 @@ function App() {
       </BrowserRouter>
     </div>
   );
-} 
+}
 
 export default App;
