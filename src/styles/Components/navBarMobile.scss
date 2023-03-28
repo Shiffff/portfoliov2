@@ -5,8 +5,8 @@
     left: 50%;
     z-index: 2;
     display: flex;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     border-radius: 100%;
     cursor: pointer;
     background-color: white;
@@ -15,18 +15,19 @@
     justify-content: center;
   }
   .navigationMobileBtn span {
-    width: 20px;
+    width: 22px;
     height: 2px;
     background-color: $color1;
     display: flex;
     position: absolute;
     transition: 0.3s;
+    display: flex;
   }
   .navigationMobileBtn span:nth-child(1) {
-    top: 20%;
+    top: 40%;
   }
   .navigationMobileBtn span:nth-child(2) {
-    top: 80%;
+    top: 60%;
   }
 
   .navigationMobileBtn.active span {
@@ -42,7 +43,7 @@
   }
 
   .navigationMobile {
-    background-color: black;
+    background-color: $color1;
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -52,6 +53,7 @@
     transition: 0.3s;
     opacity: 0;
     visibility: hidden;
+    padding-top: 40px;
   }
   .navigationMobile.active {
     opacity: 1;
@@ -60,17 +62,19 @@
   ul {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
   }
   .textMobile {
     position: relative;
     display: inline-flex;
-    font-size: 48px;
+    font-size: 68px;
     color: white;
+    text-transform: uppercase;
   }
   .textMobile:after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: 30px;
     height: 5px;
     left: 0;
     width: 0;
@@ -81,4 +85,14 @@
   .textMobile:hover:after {
     width: 100%;
   }
+}
+.activeMobile .textMobile:after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  height: 5px;
+  left: 0;
+  width: 100%;
+  display: inline-flex;
+  background-color: yellow;
 }
