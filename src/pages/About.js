@@ -5,7 +5,6 @@ const About = () => {
   return (
     <div className="aboutPage">
       <div>
-        <NavBar />
       </div>
     </div>
   );

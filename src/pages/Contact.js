@@ -5,7 +5,6 @@ const Contact = () => {
   return (
     <div className="contactPage">
       <div>
-        <NavBar />
       </div>
     </div>
   );

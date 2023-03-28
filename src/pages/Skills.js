@@ -5,7 +5,6 @@ const Skills = () => {
   return (
     <div className="skillsPage">
       <div>
-        <NavBar />
       </div>
     </div>
   );
