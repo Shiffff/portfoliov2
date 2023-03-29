@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
+
+// Variables
+$color-white: #fff;
+$color-coral: coral;
+$transition-time: 0.3s;
 $color1: #151515;
+$color2: rgb(255, 60, 0);
+$color3: white;
 
 * {
   font-family: "roboto", sans-serif;
@@ -21,7 +28,7 @@ ol {
 html {
   background-color: $color1;
 }
-@media (min-width: 400px) {
+@media (min-width: 401px) {
   .navigationMobileContainer {
     display: none;
   }

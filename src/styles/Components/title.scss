@@ -1,0 +1,63 @@
+.letter-anim,
+.letter-anim span {
+  display: inline-block;
+}
+.portfolioTitle span {
+  cursor: pointer;
+  position: relative;
+  font-size: 150px;
+}
+.letter-anim span::before,
+.letter-anim span::after {
+  position: absolute;
+  content: attr(data-letter);
+  inset: 0;
+}
+
+.letter-anim span::after {
+  color: white;
+  transition: transform 0.3s ease-out, color 0.1s ease-out;
+}
+.letter-anim:hover span::after {
+  rotate: -6deg;
+}
+.letter-anim:hover span::before {
+  transition: transform 0.1s ease-out;
+  color: rgb(216, 14, 65);
+  text-shadow: 0 0 7px hotpink, 0 0 10px hotpink, 0 0 20px hotpink,
+    0 0 50px hotpink, 0 0 70px hotpink, 0 0 100px hotpink, 0 0 120px hotpink,
+    0 0 157px hotpink;
+}
+.portfolioTitle {
+  margin-left: 100px;
+  margin-top: 75px;
+}
+
+//**********************************************************s
+.letter-anim:nth-child(1):hover span:after {
+  color: $color3;
+}
+.letter-anim:nth-child(2):hover span:after {
+  color: $color3;
+}
+.letter-anim:nth-child(3):hover span:after {
+  color: $color3;
+}
+.letter-anim:nth-child(4):hover span:after {
+  color: $color3;
+}
+.letter-anim:nth-child(5):hover span:after {
+  color: $color3;
+}
+.letter-anim:nth-child(6):hover span:after {
+  color: $color3;
+}
+.letter-anim:nth-child(7):hover span:after {
+  color: $color3;
+}
+.letter-anim:nth-child(8):hover span:after {
+  color: $color3;
+}
+.letter-anim:nth-child(9):hover span:after {
+  color: $color3;
+}
