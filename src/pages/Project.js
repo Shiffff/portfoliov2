@@ -1,11 +1,9 @@
 import React from "react";
-import PortfolioTitle from "../components/pageTitle/PortfolioTitle";
 
 const Project = () => {
   const projects = [
     {
       title: "Professeur Coquille",
-      picture: "../test1.png",
       mission:
         "A secure platform was developed for a teacher and their students using React, Node.js, Express, and MongoDB. The project was deployed on a Hostinger VPS using PM2 and Nginx, The platform allows users to login with credentials and share content similar to a social network, as well as provide courses to students.",
       outils: [
@@ -15,7 +13,6 @@ const Project = () => {
         },
         {
           name: "javascript",
-          pic: "../logo192.png",
         },
       ],
       link: "",
@@ -29,43 +26,36 @@ const Project = () => {
       outils: [
         {
           name: "Name1",
-          pic: "../logo192.png",
         },
       ],
       link: "",
     },
     {
       title: "test1",
-      picture: "../home.svg",
       mission: "fafazfaz fa az faz fa faz",
       outils: [
         {
           name: "Name1",
-          pic: "../logo192.png",
         },
       ],
       link: "",
     },
     {
       title: "test1",
-      picture: "../home.svg",
       mission: "fafazfaz fa az faz fa faz",
       outils: [
         {
           name: "Name1",
-          pic: "../logo192.png",
         },
       ],
       link: "",
     },
     {
       title: "test1",
-      picture: "../home.svg",
       mission: "fafazfaz fa az faz fa faz",
       outils: [
         {
           name: "Name1",
-          pic: "../logo192.png",
         },
       ],
       link: "",
@@ -73,12 +63,10 @@ const Project = () => {
 
     {
       title: "test1",
-      picture: "../home.svg",
       mission: "fafazfaz fa az faz fa faz",
       outils: [
         {
           name: "Name1",
-          pic: "../logo192.png",
         },
       ],
       link: "",
@@ -86,12 +74,10 @@ const Project = () => {
 
     {
       title: "test1",
-      picture: "../home.svg",
       mission: "fafazfaz fa az faz fa faz",
       outils: [
         {
           name: "Name1",
-          pic: "../logo192.png",
         },
       ],
       link: "",
@@ -100,19 +86,20 @@ const Project = () => {
 
   return (
     <div className="projectPage">
-      <PortfolioTitle />
+      <h2 className="pageTitle">
+        PORTFOLIO <span className="pointTitle nexttitle">.</span>
+      </h2>
       <div className="projectContainer">
         <ul>
           {projects.map((project, index) => (
             <li key={index}>
               <div className="projectLeftPart">
-                <img className="projectPicture" src={project.picture}></img>
                 <div className="projectContent">
                   <p className="projectTitle">{project.title}</p>
                   <p className="projectMission">{project.mission}</p>
                   <div className="outilsCardContainer">
                     {project.outils.map((outil, index) => (
-                      <div className="outilCard">
+                      <div className="outilCard" key={index}>
                         <p>{outil.name}</p>
                       </div>
                     ))}

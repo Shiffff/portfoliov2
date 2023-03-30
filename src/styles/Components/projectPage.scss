@@ -1,17 +1,32 @@
 .projectPage {
   color: $color-white;
-  h2 {
-    font-size: 120px;
-    text-transform: uppercase;
-    margin-bottom: 200px;
+
+  .pointTitle {
+    color: $color-coral;
   }
+
   .projectContainer {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 200px;
+    @include xxl {
+      margin-top: 100px;
+    }
+    @include md {
+      margin-top: 40px;
+    }
   }
   ul {
-    width: 80%;
+    width: 70%;
+    @include xxxl {
+      width: 80%;
+    }
+    @include xxl {
+      width: 85%;
+    }
+    @include xl {
+      width: 90%;
+    }
   }
   .projectLeftPart {
     display: flex;
@@ -23,16 +38,20 @@
     justify-content: space-between;
     cursor: pointer;
     transition: $transition-time;
-    padding-bottom: 10px;
-    margin-top: 80px;
+    margin-top: 20px;
+    width: 100%;
+
     &:hover {
       border-bottom: 1px solid $color-coral;
       .projectContent {
         color: $color-coral;
       }
       .outilCard {
-        color: $color-coral;
+        color: black;
+
+        background-color: $color-coral;
         border: 1px solid $color-coral;
+
         &:hover {
           transform: scale(1.04);
           transition: $transition-time;
@@ -64,6 +83,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-bottom: 20px;
   }
 
   .outilCard {
@@ -74,6 +94,8 @@
     transition: $transition-time;
     text-transform: uppercase;
     font-weight: 500;
+    background-color: $color1;
+    color: white;
   }
   .outilPic {
     width: 15px;
@@ -83,6 +105,11 @@
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    @include md {
+      font-size: 20px;
+    }
   }
 
   svg {
@@ -91,6 +118,32 @@
     min-width: 140px;
     min-height: 140px;
     transition: $transition-time;
+    margin-left: 30px;
+    @include xxxl {
+      width: 120px;
+      height: 120px;
+      min-width: 120px;
+      min-height: 120px;
+    }
+    @include xxl {
+      width: 100px;
+      height: 100px;
+      min-width: 100px;
+      min-height: 100px;
+    }
+    @include xl {
+      width: 80px;
+      height: 80px;
+      min-width: 80px;
+      min-height: 80px;
+      margin-left: 0px;
+    }
+    @include md {
+      width: 50px;
+      height: 50px;
+      min-width: 50px;
+      min-height: 50px;
+    }
   }
   svg path {
     transition: $transition-time;
@@ -100,12 +153,18 @@
     flex-direction: column;
     justify-content: space-between;
     transition: $transition-time;
-    margin-left: 50px;
   }
   .projectMission {
-    margin-top: -20px;
     font-size: 18px;
     font-weight: 300;
+    margin-bottom: 30px;
+    text-align: justify;
+    @include lg {
+      font-size: 16px;
+    }
+    @include md {
+      font-size: 15px;
+    }
   }
 }
 

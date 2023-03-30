@@ -2,7 +2,7 @@
 
 // Variables
 $color-white: #fff;
-$color-coral: coral;
+$color-coral: rgb(255, 238, 0);
 $transition-time: 0.3s;
 $color1: #151515;
 $color2: rgb(255, 60, 0);
@@ -32,4 +32,36 @@ html {
   .navigationMobileContainer {
     display: none;
   }
+}
+.pageTitle {
+  color: white;
+  font-size: 120px;
+  text-transform: uppercase;
+  margin: 100px 0 0 100px;
+  display: inline-flex;
+  position: relative;
+  @include xxl {
+    font-size: 90px;
+  }
+  @include lg {
+    font-size: 40px;
+    margin: 15px 0 0 15px;
+  }
+}
+.pageTitle:after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  height: 7px;
+  left: 0;
+  width: 0;
+  display: inline-flex;
+  background-color: $color-coral;
+  transition: 0.3s;
+}
+.pageTitle:hover:after {
+  width: 100%;
+}
+.nexttitle {
+  color: $color-coral;
 }

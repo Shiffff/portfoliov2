@@ -1,8 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    // Récupérer l'URL courante
+    const currentPath = window.location.pathname;
+    // Trouver l'index de l'URL courante dans la liste des liens
+    const currentIndex = links.findIndex((link) => link.href === currentPath);
+    // Mettre à jour l'index actif
+    setActiveIndex(currentIndex);
+  }, []);
 
   const handleClick = (index) => {
     setActiveIndex(index);

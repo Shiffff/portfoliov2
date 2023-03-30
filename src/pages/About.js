@@ -1,9 +1,13 @@
 import React from "react";
 
 const About = () => {
+  const array = "[  ]";
+
   return (
     <div className="aboutPage">
-      <div>About</div>
+      <h2 className="pageTitle">
+        ABOUT ME <span className="pointTitle nexttitle">{array}</span>
+      </h2>
     </div>
   );
 };
