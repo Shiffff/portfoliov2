@@ -34,34 +34,58 @@ html {
   }
 }
 .pageTitle {
+  cursor: default;
   color: white;
   font-size: 120px;
   text-transform: uppercase;
   margin: 100px 0 0 100px;
   display: inline-flex;
   position: relative;
+  font-weight: 200;
   @include xxl {
     font-size: 90px;
   }
   @include lg {
     font-size: 40px;
+    font-weight: 300;
+
     margin: 15px 0 0 15px;
   }
 }
+
 .pageTitle:after {
   content: "";
   position: absolute;
-  bottom: 50%;
-  height: 7px;
+  bottom: 40%;
+  height: 11px;
   left: 0;
   width: 0;
   display: inline-flex;
   background-color: $color-coral;
   transition: 0.3s;
+  @include xl {
+    height: 8px;
+  }
+  @include lg {
+    height: 6px;
+  }
 }
 .pageTitle:hover:after {
   width: 100%;
 }
+.pointTitle {
+  font-size: 100px;
+  font-weight: 600;
+  @include xxl {
+    font-size: 90px;
+    font-weight: 500;
+  }
+  @include lg {
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
 .nexttitle {
+  animation: growUp 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   color: $color-coral;
 }

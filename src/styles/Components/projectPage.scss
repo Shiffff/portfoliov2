@@ -1,10 +1,6 @@
 .projectPage {
   color: $color-white;
 
-  .pointTitle {
-    color: $color-coral;
-  }
-
   .projectContainer {
     display: flex;
     justify-content: center;
@@ -18,6 +14,7 @@
   }
   ul {
     width: 70%;
+    margin-bottom: 200px;
     @include xxxl {
       width: 80%;
     }
@@ -43,12 +40,11 @@
 
     &:hover {
       border-bottom: 1px solid $color-coral;
-      .projectContent {
+      .projectTitle {
         color: $color-coral;
       }
       .outilCard {
         color: black;
-
         background-color: $color-coral;
         border: 1px solid $color-coral;
 
@@ -84,6 +80,7 @@
     align-items: center;
     gap: 20px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
   }
 
   .outilCard {
@@ -102,6 +99,8 @@
     height: 15px;
   }
   .projectTitle {
+    transition: $transition-time;
+
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 500;
@@ -165,17 +164,6 @@
     @include md {
       font-size: 15px;
     }
-  }
-}
-
-@keyframes slide-in-bottom {
-  0% {
-    transform: translateY(60px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
 
