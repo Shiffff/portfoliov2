@@ -10,31 +10,31 @@ const Skills = () => {
       skills: [
         {
           name: "mongodb",
-          pic: "../mongodb.svg",
+          pic: "../mongo.svg",
         },
         {
           name: "sass",
-          pic: "",
+          pic: "../sass.svg",
         },
         {
           name: "javascript",
-          pic: "",
+          pic: "../js.svg",
         },
         {
           name: "react",
-          pic: "",
+          pic: "../react.svg",
         },
         {
           name: "bootstrap",
-          Pic: "",
+          pic: "../bootstrap.svg",
         },
         {
           name: "html",
-          pic: "",
+          pic: "../html.svg",
         },
         {
           name: "css",
-          pic: "",
+          pic: "../css.svg",
         },
       ],
     },
@@ -43,11 +43,11 @@ const Skills = () => {
       skills: [
         {
           name: "Nginx",
-          pic: "",
+          pic: "../nginx.svg",
         },
         {
           name: "pm2",
-          pic: "",
+          pic: "../pm2.png",
         },
       ],
     },
@@ -56,27 +56,31 @@ const Skills = () => {
       skills: [
         {
           name: "git",
-          pic: "",
+          pic: "../git.svg",
         },
         {
           name: "figma",
-          pic: "",
+          pic: "../figma.svg",
         },
         {
           name: "notion",
-          pic: "",
+          pic: "../notion.svg",
         },
         {
           name: "vscode",
-          pic: "",
+          pic: "../vscode.svg",
         },
         {
           name: "photoshop",
-          pic: "",
+          pic: "../photoshop.svg",
         },
         {
           name: "trello",
-          pic: "",
+          pic: "../trello.svg",
+        },
+        {
+          name: "wordpress",
+          pic: "../wordpress.svg",
         },
       ],
     },
@@ -85,28 +89,28 @@ const Skills = () => {
       skills: [
         {
           name: "Teamwork",
-          pic: "",
+          pic: "../teamwork.svg",
         },
         {
           name: "Communication",
-          pic: "",
+          pic: "../communication.svg",
         },
         {
           name: "Motivation",
-          pic: "",
+          pic: "../motivation.svg",
         },
         {
           name: "Leadership",
-          pic: "",
+          pic: "../leadership.svg",
         },
         {
           name: "Empathy",
-          pic: "",
+          pic: "../empathize.svg",
         },
 
         {
           name: "Flexibility",
-          pic: "",
+          pic: "../flexibility.svg",
         },
       ],
     },
@@ -114,10 +118,9 @@ const Skills = () => {
 
   return (
     <div className="skillsPage">
-      <h2 className="pageTitle">
-        <span className=" nexttitle">{parentheseLeft}</span> SKILLS
-        <span className=" nexttitle">{parentheseRight}</span>
-      </h2>
+      <span className=" nexttitle nexttitleSkillsLeft">{parentheseLeft}</span>
+      <h2 className="pageTitle">SKILLS</h2>
+      <span className=" nexttitle nexttitleSkillsRight">{parentheseRight}</span>
       <div className="skillFullContainer">
         <div className="skillContainer">
           {hardSkills.map((hardskill, index) => (
@@ -127,7 +130,7 @@ const Skills = () => {
                 {hardskill.skills.map((skill, index) => (
                   <div key={index} className="hardSkill">
                     <div className="imgSkillContainer">
-                      <img src={hardskill.pic}></img>
+                      <img src={skill.pic}></img>
                     </div>
                     {skill.name}
                   </div>
