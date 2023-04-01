@@ -13,11 +13,16 @@
     margin-right: 80px;
     text-transform: uppercase;
     font-weight: 300;
-    @include xxl  {
+    @include xxl {
       font-size: 30px;
     }
-    @include xl  {
+    @include xl {
       font-size: 25px;
+    }
+    @include lg {
+      margin-right: 0;
+      margin-bottom: 15px;
+      width: auto;
     }
   }
   .hardSkill {
@@ -32,11 +37,11 @@
     font-size: 13px;
     filter: grayscale(100%);
 
-    @include xxl  {
+    @include xxl {
       width: 70px;
       font-size: 11px;
     }
-    @include xl  {
+    @include xl {
       width: 50px;
       font-size: 10px;
     }
@@ -46,11 +51,14 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    @include xxl  {
+    @include xxl {
       gap: 20px;
     }
-    @include xl  {
+    @include xl {
       gap: 20px;
+    }
+    @include lg {
+      gap: 26px;
     }
   }
 
@@ -59,8 +67,12 @@
     margin-top: 200px;
     margin-bottom: 200px;
 
-    @include xxl  {
+    @include xxl {
       margin-top: 120px;
+    }
+    @include lg {
+      justify-content: center;
+      margin-bottom: 50px;
     }
   }
 
@@ -73,15 +85,14 @@
     border: 1px solid white;
     border-radius: 100%;
     margin-bottom: 10px;
-    @include xxl  {
+    @include xxl {
       width: 50px;
       height: 50px;
-      }
-    @include xl  {
+    }
+    @include xl {
       width: 40px;
       height: 40px;
-      }
-
+    }
   }
   img {
     width: 30px;
@@ -89,27 +100,31 @@
     @include xl {
       width: 25px;
       height: 25px;
-      }
-
+    }
   }
   .hardSkillFullContainer {
     display: flex;
     align-items: center;
     margin-bottom: 80px;
-    @include xxl  {
+    @include xxl {
       margin-bottom: 55px;
     }
-    @include xl  {
+    @include xl {
       margin-bottom: 50px;
+    }
+    @include lg {
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
   .skillContainer {
     margin-left: 20%;
-    @include xxl  {
+    @include xxl {
       margin-left: 10%;
     }
-    @include xl  {
+    @include lg {
       margin-left: 5%;
+      margin-right: 5%;
     }
   }
 }
@@ -121,14 +136,14 @@
   }
 }
 
-.hardSkill:hover{
+.hardSkill:hover {
   filter: grayscale(0%);
-  transform: scale(1.1)!important;
+  transform: scale(1.1) !important;
 }
-  
+
 .hardSkillFullContainer h4:hover ~ .hardSkillContainer .hardSkill {
   filter: grayscale(0%);
-  transform: scale(1.1)!important;
+  transform: scale(1.1) !important;
 }
 
 @for $i from 1 through 10 {
