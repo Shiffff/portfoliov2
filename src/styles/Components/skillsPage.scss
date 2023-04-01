@@ -5,14 +5,24 @@
     font-size: 35px;
   }
   h4 {
+    animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    cursor: default;
     font-size: 35px;
     width: 200px;
     text-align: end;
     margin-right: 80px;
     text-transform: uppercase;
     font-weight: 300;
+    @include xxl  {
+      font-size: 30px;
+    }
+    @include xl  {
+      font-size: 25px;
+    }
   }
   .hardSkill {
+    animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    cursor: default;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,16 +30,38 @@
     font-weight: 400;
     width: 100px;
     font-size: 13px;
+    filter: grayscale(100%);
+
+    @include xxl  {
+      width: 70px;
+      font-size: 11px;
+    }
+    @include xl  {
+      width: 50px;
+      font-size: 10px;
+    }
   }
 
   .hardSkillContainer {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    @include xxl  {
+      gap: 20px;
+    }
+    @include xl  {
+      gap: 20px;
+    }
   }
 
   .skillFullContainer {
     display: flex;
     margin-top: 200px;
+    margin-bottom: 200px;
+
+    @include xxl  {
+      margin-top: 120px;
+    }
   }
 
   .imgSkillContainer {
@@ -38,23 +70,69 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    border: 1px solid white;
     border-radius: 100%;
     margin-bottom: 10px;
+    @include xxl  {
+      width: 50px;
+      height: 50px;
+      }
+    @include xl  {
+      width: 40px;
+      height: 40px;
+      }
+
   }
   img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    @include xl {
+      width: 25px;
+      height: 25px;
+      }
+
   }
   .hardSkillFullContainer {
     display: flex;
     align-items: center;
     margin-bottom: 80px;
+    @include xxl  {
+      margin-bottom: 55px;
+    }
+    @include xl  {
+      margin-bottom: 50px;
+    }
   }
   .skillContainer {
     margin-left: 20%;
+    @include xxl  {
+      margin-left: 10%;
+    }
+    @include xl  {
+      margin-left: 5%;
+    }
   }
 }
 .skillsPage h2 {
   margin: 100px 0 0 0;
+
+  @include lg {
+    margin: 15px 0 0 0;
+  }
+}
+
+.hardSkill:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1)!important;
+}
+  
+.hardSkillFullContainer h4:hover ~ .hardSkillContainer .hardSkill {
+  filter: grayscale(0%);
+  transform: scale(1.1)!important;
+}
+
+@for $i from 1 through 10 {
+  .hardSkill:nth-child(#{$i}) {
+    animation-delay: #{$i * 110ms};
+  }
 }

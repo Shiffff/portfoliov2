@@ -92,7 +92,22 @@ html {
 .nexttitleSkillsLeft {
   font-size: 100px;
   margin-left: 100px;
+  @include xl {
+    font-size: 90px;
+
+  }
+  @include lg {
+    font-size: 40px;
+    margin: 0 0 0 15px;
+  }
 }
 .nexttitleSkillsRight {
   font-size: 100px;
-}
+  @include xl {
+    font-size: 90px;
+  }
+  @include lg {
+    font-size: 40px;
+  }
+
+  }

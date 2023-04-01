@@ -74,31 +74,9 @@
   height: 70px;
   background: $color-coral;
   border-radius: 50%;
-  border: 6px solid $color1;
   transition: 0.5s;
 }
-.indicator::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -22px;
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  border-top-right-radius: 20px;
-  box-shadow: 1px -10px 0 0 $color1;
-}
-.indicator::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -22px;
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  border-top-left-radius: 20px;
-  box-shadow: -1px -10px 0 0 $color1;
-}
+
 
 /* Indicator Transitions */
 .navigation ul li:nth-child(1).active ~ .indicator {
@@ -115,4 +93,51 @@
 }
 .navigation ul li:nth-child(5).active ~ .indicator {
   transform: translateX(calc(70px * 4));
+}
+
+
+@include lg {
+  .navigation {
+    width: 320px;
+    height: 56px;
+  }
+
+  .navigation ul {
+    width: 280px;
+  }
+
+  .navigation ul li {
+    width: 56px;
+    height: 56px;
+  }
+
+  .navigation ul li a .icon {
+    font-size: 1.2em;
+  }
+
+  .navigation ul li a .text {
+    font-size: 0.6em;
+  }
+
+  .indicator {
+    width: 56px;
+    height: 56px;
+  }
+
+  /* Indicator Transitions */
+  .navigation ul li:nth-child(1).active ~ .indicator {
+    transform: translateX(calc(56px * 0));
+  }
+  .navigation ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(56px * 1));
+  }
+  .navigation ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(56px * 2));
+  }
+  .navigation ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(56px * 3));
+  }
+  .navigation ul li:nth-child(5).active ~ .indicator {
+    transform: translateX(calc(56px * 4));
+  }
 }
