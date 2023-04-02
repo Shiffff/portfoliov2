@@ -1,0 +1,25 @@
+.contactPage {
+  color: white;
+}
+
+.contactPageContainer {
+  display: flex;
+}
+.contactPageLeftPart p {
+  margin-top: 250px;
+  margin-left: 200px;
+  font-size: 200px;
+  font-weight: 700;
+}
+.contactPageRightPart img {
+  width: 20px;
+  height: 20px;
+}
+.locationUpPart {
+  display: flex;
+}
+.contactPageRightPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

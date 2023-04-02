@@ -1,12 +1,14 @@
 import React from "react";
 
 const About = () => {
-  const array = "[  ]";
+  const arrayLeft = "[";
+  const arrayRight = "]";
 
   return (
     <div className="aboutPage">
       <h2 className="pageTitle">
-        ABOUT ME <span className="pointTitle nexttitle">{array}</span>
+        ABOUT <span className="pointTitle nexttitle">{arrayLeft}</span>ME
+        <span className="pointTitle nexttitle">{arrayRight}</span>
       </h2>
     </div>
   );
