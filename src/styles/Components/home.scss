@@ -15,6 +15,13 @@
     font-size: 100px;
     text-transform: uppercase;
     margin-bottom: 50px;
+    @include lg{
+      font-size: 40px;
+
+    }
+    @include md {
+      font-size: 30px;
+    }
   }
   h1 {
     font-size: 100px;
@@ -25,6 +32,9 @@
     @include lg {
       font-size: 40px;
     }
+    @include md {
+      font-size: 30px;
+    }
   }
 }
 .homeLocation {
@@ -34,14 +44,16 @@
 
   @include lg {
     transform: translateX(50%);
-    bottom: 200px;
+    bottom: 130px;
     right: 50%;
+  }
+  @include md {
+display: none;
   }
 }
 
 .socialContainerHome {
   position: absolute;
-
   bottom: 60px;
   right: 90px;
   @include lg {
@@ -49,10 +61,19 @@
     bottom: 150px;
     right: 50%;
   }
+    @include md {
+  display: none;
+  }
 }
 .homeStacks img {
   width: 45px;
   height: 45px;
+  @include md {
+    width: 40px;
+    height: 40px;
+      
+  }
+
 }
 .homeStacks {
   display: flex;
@@ -60,4 +81,8 @@
   width: 100%;
   text-align: center;
   gap: 40px;
+  @include md {
+    gap: 30px;
+
+  }
 }

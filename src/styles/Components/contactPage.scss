@@ -58,14 +58,16 @@
     font-size: 150px;
   }
   @include xxl {
-    font-size: 130px;
+    font-size: 90px;
   }
   @include xl {
-    font-size: 110px;
+    font-size: 90px;
   }
   @include lg {
     margin-left: 0;
-    margin-top: 100px;
+    margin-top: 25px;
+    font-size: 50px;
+
   }
   @include md {
     display: none;
@@ -83,17 +85,16 @@
   gap: 15%;
   margin-left: 30%;
   @include xxxl {
-    margin-left: 25%;
+    margin-left: 30%;
   }
   @include xxl {
-    margin-left: 20%;
+    gap: 5%;
+    margin-left: 30%;
   }
-  @include xl {
-    margin-left: 15%;
-  }
+
   @include lg {
     margin-left: 0;
-    margin-top: 100px;
+    margin-top: 45px;
   }
   @include md {
     margin-top: 10px;
