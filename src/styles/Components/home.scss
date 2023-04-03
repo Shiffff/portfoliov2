@@ -11,10 +11,17 @@
   @include lg {
     align-items: center;
   }
+  h2 {
+    font-size: 100px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
   h1 {
-    font-size: 80px;
+    font-size: 100px;
     color: $color-coral;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
     @include lg {
       font-size: 40px;
     }
@@ -22,8 +29,8 @@
 }
 .homeLocation {
   position: absolute;
-  bottom: 60px;
-  right: 30px;
+  bottom: 30px;
+  right: 40px;
 
   @include lg {
     transform: translateX(50%);
@@ -34,8 +41,9 @@
 
 .socialContainerHome {
   position: absolute;
-  bottom: 10px;
-  right: 80px;
+
+  bottom: 60px;
+  right: 90px;
   @include lg {
     transform: translateX(50%);
     bottom: 150px;
@@ -45,4 +53,11 @@
 .homeStacks img {
   width: 45px;
   height: 45px;
+}
+.homeStacks {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  gap: 40px;
 }

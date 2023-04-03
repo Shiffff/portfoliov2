@@ -63,8 +63,8 @@ const ParticlesBg = () => {
                 color: "#ffee00",
                 distance: 150,
                 enable: true,
-                opacity: 0.2,
-                width: 1,
+                opacity: 0.1,
+                width: 7,
               },
               collisions: {
                 enable: true,
@@ -72,7 +72,7 @@ const ParticlesBg = () => {
               move: {
                 enable: true,
                 speed: 0.6,
-                direction: "bottom",
+                direction: "top",
                 random: false,
                 straight: false,
                 out_mode: "out",
@@ -88,7 +88,7 @@ const ParticlesBg = () => {
                   enable: true,
                   area: 1000,
                 },
-                value: 60,
+                value: 150,
               },
               opacity: {
                 value: 0.5,

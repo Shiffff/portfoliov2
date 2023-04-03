@@ -27,7 +27,6 @@ const Home = () => {
       <div className="homeContainer">
         <h1>Alexis PRIVAT</h1>
         <h2>Web developer</h2>
-        <p>About me </p>
         <div className="pulseContainer homeLocation">
           <div className="pulse"></div>
           <p className="locationContent">Currently in Bordeaux, FR</p>
