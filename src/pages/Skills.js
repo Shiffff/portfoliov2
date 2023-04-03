@@ -9,14 +9,6 @@ const Skills = () => {
       title: "Web",
       skills: [
         {
-          name: "mongodb",
-          pic: "../mongo.svg",
-        },
-        {
-          name: "sass",
-          pic: "../sass.svg",
-        },
-        {
           name: "javascript",
           pic: "../js.svg",
         },
@@ -25,9 +17,22 @@ const Skills = () => {
           pic: "../react.svg",
         },
         {
-          name: "bootstrap",
-          pic: "../bootstrap.svg",
+          name: "redux",
+          pic: "../redux.svg",
         },
+        {
+          name: "nodejs",
+          pic: "../nodejs.svg",
+        },
+        {
+          name: "mongodb",
+          pic: "../mongo.svg",
+        },
+        {
+          name: "sass",
+          pic: "../sass.svg",
+        },
+
         {
           name: "html",
           pic: "../html.svg",
@@ -35,6 +40,10 @@ const Skills = () => {
         {
           name: "css",
           pic: "../css.svg",
+        },
+        {
+          name: "bootstrap",
+          pic: "../bootstrap.svg",
         },
       ],
     },

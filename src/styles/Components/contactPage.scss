@@ -1,25 +1,118 @@
 .contactPage {
   color: white;
+  .contactTitle {
+    margin: 100px 0 0 0;
+    @include lg {
+      margin: 15px 0 0 0;
+    }
+  }
+  .contactFirst {
+    margin-left: 100px;
+    @include lg {
+      margin: 0 0 0 15px;
+    }
+  }
+  .sizeAcolade {
+    font-size: 120px;
+    font-weight: 400;
+    @include xl {
+      font-size: 90px;
+    }
+    @include lg {
+      font-size: 40px;
+    }
+  }
+  img {
+    width: 80px;
+    height: 80px;
+    @include md {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  h3 {
+    font-size: 40px;
+    margin-left: 30px;
+  }
+  .contactElBottom {
+    margin-left: 112px;
+    @include md {
+      margin-left: 70px;
+    }
+  }
 }
 
 .contactPageContainer {
   display: flex;
+  align-items: center;
+  height: 70vh;
+  @include lg {
+    flex-direction: column;
+  }
 }
-.contactPageLeftPart p {
-  margin-top: 250px;
-  margin-left: 200px;
+.contactPageLeftPart {
   font-size: 200px;
   font-weight: 700;
+  margin-left: 15%;
+  @include xxxl {
+    font-size: 150px;
+  }
+  @include xxl {
+    font-size: 130px;
+  }
+  @include xl {
+    font-size: 110px;
+  }
+  @include lg {
+    margin-left: 0;
+    margin-top: 100px;
+  }
+  @include md {
+    display: none;
+  }
 }
-.contactPageRightPart img {
-  width: 20px;
-  height: 20px;
-}
-.locationUpPart {
+.contactElTop {
   display: flex;
+  align-items: center;
 }
 .contactPageRightPart {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 15%;
+  margin-left: 30%;
+  @include xxxl {
+    margin-left: 25%;
+  }
+  @include xxl {
+    margin-left: 20%;
+  }
+  @include xl {
+    margin-left: 15%;
+  }
+  @include lg {
+    margin-left: 0;
+    margin-top: 100px;
+  }
+  @include md {
+    margin-top: 10px;
+
+    gap: 10%;
+  }
+}
+.spanContactLeftPart {
+  color: $color-coral;
+}
+.pulseContainer {
+  display: flex;
+  align-items: center;
+  p {
+    margin-left: 10px;
+  }
+}
+.socialContainer img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
