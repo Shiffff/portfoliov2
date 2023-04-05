@@ -21,7 +21,11 @@ const Contact = () => {
       name: "Mail",
       content: (
         <div className="emailContainer">
-          <a href="mailto:alexis.privat@live.fr" target="_blank">
+          <a
+            href="mailto:alexis.privat@live.fr"
+            target="_blank"
+            rel="noreferrer"
+          >
             alexis.privat@live.fr
           </a>
         </div>
@@ -32,10 +36,14 @@ const Contact = () => {
       name: "Social",
       content: (
         <div className="socialContainer">
-          <a href="https://github.com/Shiffff" target="_blank">
+          <a href="https://github.com/Shiffff" target="_blank" rel="noreferrer">
             <img src="../gitHub.svg" alt="GitHub"></img>
           </a>
-          <a href="https://www.linkedin.com/in/alexis-privat" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/alexis-privat"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="../linkedin.svg" alt="LinkedIn"></img>
           </a>
         </div>
@@ -60,7 +68,7 @@ const Contact = () => {
           {rightPartContent.map((content, index) => (
             <div key={index} className="contactElContainer">
               <div className="contactElTop">
-                <img src={content.icon}></img>
+                <img src={content.icon} alt={content.name}></img>
                 <h3>{content.name}</h3>
               </div>
               <div className="contactElBottom">{content.content}</div>

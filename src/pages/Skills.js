@@ -72,6 +72,10 @@ const Skills = () => {
           pic: "../figma.svg",
         },
         {
+          name: "postman",
+          pic: "../postman.svg",
+        },
+        {
           name: "notion",
           pic: "../notion.svg",
         },
@@ -139,7 +143,7 @@ const Skills = () => {
                 {hardskill.skills.map((skill, index) => (
                   <div key={index} className="hardSkill">
                     <div className="imgSkillContainer">
-                      <img src={skill.pic}></img>
+                      <img src={skill.pic} alt={skill.name}></img>
                     </div>
                     {skill.name}
                   </div>

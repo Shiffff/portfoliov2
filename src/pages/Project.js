@@ -114,6 +114,7 @@ const Project = () => {
         },
       ],
       link: "",
+      pic: ["../css.svg", "../cv.svg", "../css/svg"],
     },
 
     {
@@ -132,6 +133,7 @@ const Project = () => {
         },
       ],
       link: "",
+      pic: ["../css.svg", "../cv.svg", "../css/svg"],
     },
   ];
 
