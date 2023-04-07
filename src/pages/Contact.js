@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Contact = () => {
   const accoladeLeft = "{";
@@ -50,6 +50,9 @@ const Contact = () => {
       ),
     },
   ];
+  useEffect(() => {
+    document.title = "Contact - Alexis PRIVAT";
+  }, []);
 
   return (
     <div className="contactPage">

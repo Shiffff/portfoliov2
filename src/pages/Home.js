@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ParticlesBg from "../components/ParticlesBg";
 
 const Home = () => {
@@ -20,6 +20,9 @@ const Home = () => {
       pic: "../js.svg",
     },
   ];
+  useEffect(() => {
+    document.title = "Home - Alexis PRIVAT";
+  }, []);
 
   return (
     <div>
@@ -32,16 +35,20 @@ const Home = () => {
           <p className="locationContent">Currently in Bordeaux, FR</p>
         </div>
         <div className="socialContainer socialContainerHome">
-          <a href="https://github.com/Shiffff" target="_blank">
+          <a href="https://github.com/Shiffff" target="_blank" rel="noreferrer">
             <img src="../gitHub.svg" alt="GitHub"></img>
           </a>
-          <a href="https://www.linkedin.com/in/alexis-privat" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/alexis-privat"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src="../linkedin.svg" alt="LinkedIn"></img>
           </a>
         </div>
         <div className="homeStacks">
           {mainStack.map((stack, index) => (
-            <img key={index} src={stack.pic}></img>
+            <img key={index} src={stack.pic} alt={stack.name}></img>
           ))}
         </div>
       </div>

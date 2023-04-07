@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import FsLightbox from "fslightbox-react";
 
 const Project = () => {
+  const [toggler, setToggler] = useState(false);
+  const [selectedProjectIndex, setSelectedProjectIndex] = useState(null);
   const projects = [
     {
       title: "Billed",
@@ -19,6 +22,7 @@ const Project = () => {
         },
       ],
       link: "",
+      pic: ["../billed4.png", "../billed2.png", "../billed3.png"],
     },
     {
       title: "Professeur Coquille",
@@ -42,6 +46,11 @@ const Project = () => {
         },
       ],
       link: "",
+      pic: [
+        "../profcoquille1.png",
+        "../profcoquille2.png",
+        "../profcoquille3.png",
+      ],
     },
     {
       title: "les petits plats",
@@ -59,6 +68,11 @@ const Project = () => {
         },
       ],
       link: "",
+      pic: [
+        "../lespetitsplats1.png",
+        "../lespetitsplats2.png",
+        "../lespetitsplats3.png",
+      ],
     },
     {
       title: "groupomania",
@@ -82,6 +96,11 @@ const Project = () => {
         },
       ],
       link: "",
+      pic: [
+        "../groupomania1.png",
+        "../groupomania2.png",
+        "../groupomania3.png",
+      ],
     },
 
     {
@@ -96,6 +115,7 @@ const Project = () => {
         },
       ],
       link: "",
+      pic: ["../ohmyfood1.png", "../ohmyfood2.png", "../ohmyfood3.png"],
     },
 
     {
@@ -114,7 +134,7 @@ const Project = () => {
         },
       ],
       link: "",
-      pic: ["../css.svg", "../cv.svg", "../css/svg"],
+      pic: ["../gameon1.png", "../gameon2.png", "../gameon3.png"],
     },
 
     {
@@ -133,9 +153,17 @@ const Project = () => {
         },
       ],
       link: "",
-      pic: ["../css.svg", "../cv.svg", "../css/svg"],
+      pic: ["../fisheye1.png", "../fisheye2.png", "../fisheye3.png"],
     },
   ];
+  useEffect(() => {
+    document.title = "Portfolio - Alexis PRIVAT";
+  }, []);
+
+  const openLightbox = (index) => {
+    setSelectedProjectIndex(index);
+    setToggler(!toggler);
+  };
 
   return (
     <div className="projectPage">
@@ -144,7 +172,7 @@ const Project = () => {
       <div className="projectContainer">
         <ul>
           {projects.map((project, index) => (
-            <li key={index}>
+            <li key={index} onClick={() => openLightbox(index)}>
               <div className="projectLeftPart">
                 <div className="projectContent">
                   <p className="projectTitle">{project.title}</p>
@@ -174,6 +202,12 @@ const Project = () => {
             </li>
           ))}
         </ul>
+        {selectedProjectIndex !== null && (
+          <FsLightbox
+            toggler={toggler}
+            sources={projects[selectedProjectIndex].pic}
+          />
+        )}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Skills = () => {
   const parentheseLeft = "<";
@@ -128,6 +128,9 @@ const Skills = () => {
       ],
     },
   ];
+  useEffect(() => {
+    document.title = "Skills - Alexis PRIVAT";
+  }, []);
 
   return (
     <div className="skillsPage">

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const About = () => {
   const arrayLeft = "[";
   const arrayRight = "]";
+
+  useEffect(() => {
+    document.title = "About me - Alexis PRIVAT";
+  }, []);
 
   return (
     <div className="aboutPage">
@@ -38,7 +42,7 @@ const About = () => {
             sports and running, chess, and video games.
             <br />
             <br />
-            You can find my resume below.
+            You can find my resume here.
           </p>
         </div>
       </div>
