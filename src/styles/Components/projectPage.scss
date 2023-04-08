@@ -39,14 +39,14 @@
     width: 100%;
 
     &:hover {
-      border-bottom: 1px solid $color-coral;
+      border-bottom: 1px solid $color-secondary;
       .projectTitle {
-        color: $color-coral;
+        color: $color-secondary;
       }
       .outilCard {
         color: black;
-        background-color: $color-coral;
-        border: 1px solid $color-coral;
+        background-color: $color-secondary;
+        border: 1px solid $color-secondary;
 
         &:hover {
           transform: scale(1.04);
@@ -54,7 +54,7 @@
         }
       }
       svg path {
-        fill: $color-coral;
+        fill: $color-secondary;
         transition: $transition-time;
       }
       .projectPicture {
