@@ -92,6 +92,10 @@ const Skills = () => {
           pic: "../postman.svg",
         },
         {
+          name: "filezilla",
+          pic: "../filezilla.svg",
+        },
+        {
           name: "notion",
           pic: "../notion.svg",
         },
