@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const arrayLeft = "[";
@@ -27,14 +28,22 @@ const About = () => {
       <div className="aboutPageContainer">
         <div className="aboutPageLeft">
           {currentPic === 1 ? (
-            <img className="profilPicOne" src="../profil_pic.png" />
+            <img
+              className="profilPicOne"
+              src="../profil_pic.png"
+              alt="profile "
+            />
           ) : (
-            <img className="profilPicTwo" src="../profil_pic2.png" />
+            <img
+              className="profilPicTwo"
+              src="../profil_pic2.png"
+              alt="profile "
+            />
           )}
         </div>
         <div className="aboutPageRight">
           <p>
-            Hi,
+            <span className="aboutPageHi">Hi !</span>
             <br />
             <br />
             My name is Alexis Privat.
@@ -46,30 +55,38 @@ const About = () => {
             specialized in JavaScript and ReactJS through a second course.
             During my training, I worked on various projects, one of which is
             now being used by dozens of students on a daily basis. I developed
-            the front-end, back-end, and took care of implementing the software
-            too - enabling me to hone my skills quite a bit. You will be able to
-            learn about this project in my portfolio.
+            the front-end, back-end, and took care of the software deployment -
+            enabling me to hone my skills quite a bit. You will be able to learn
+            about this project in my portfolio.
             <br />
             <br />
-            For now, I mainly work with React, Redux, and Node.js, and I am
-            always eager to use new software and tools in order to learn new
-            skills. As of late, I have been planning to take the "Full-Stack
-            Developer - Java and Angular" course by OpenClassrooms, which will
-            start in September 2023. I am currently looking for a company that
-            would allow me to take this course on a work-study basis.
+            For now, I mainly work with{" "}
+            <span className="aboutPageSentenceFormation">
+              React, Redux, and Node.js{" "}
+            </span>
+            , and I am always eager to use new software and tools in order to
+            learn new skills. As of late, I have been planning to take the{" "}
+            <span className="aboutPageSentenceFormation">
+              "Full-Stack Developer - Java and Angular"
+            </span>{" "}
+            course by OpenClassrooms, which will start in September 2023.{" "}
+            <span className="aboutPageSentence">
+              I am currently looking for a company that would allow me to take
+              this course on a work-study basis.
+            </span>
             <br />
             <br />
             Aside from software development, I enjoy sports, playing chess, and
             video games.
             <br />
             <br />
-            You can find my résumé here.
+            You can find my resume{" "}
+            <Link to="../CV.pdf" target="_blank">
+              <span className="aboutPageResume">here.</span>
+            </Link>
             <br />
           </p>
         </div>
-        <img className="aboutIcon skateIcon" src="../Skate.png"></img>
-        <img className="aboutIcon ChessIcon" src="../Chess.png"></img>
-        <img className="aboutIcon GamesIcon" src="../Games.png"></img>
       </div>
     </div>
   );

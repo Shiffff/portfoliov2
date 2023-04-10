@@ -66,6 +66,11 @@ const Contact = () => {
           <p>
             Let<span className="spanContactLeftPart">'</span>s <br /> Talk !
           </p>
+          <img
+            className="contactBubble"
+            src="../bubble.svg"
+            alt="talk bubble"
+          ></img>
         </div>
         <div className="contactPageRightPart">
           {rightPartContent.map((content, index) => (

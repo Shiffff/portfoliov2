@@ -21,12 +21,28 @@ const Skills = () => {
           pic: "../redux.svg",
         },
         {
+          name: "angular",
+          pic: "../angular.svg",
+        },
+        {
+          name: "java",
+          pic: "../java.svg",
+        },
+        {
           name: "nodejs",
           pic: "../nodejs.svg",
         },
         {
           name: "mongodb",
           pic: "../mongo.svg",
+        },
+        {
+          name: "jestjs",
+          pic: "../jest.svg",
+        },
+        {
+          name: "express",
+          pic: "../express.svg",
         },
         {
           name: "sass",

@@ -49,7 +49,7 @@
 
   .hardSkillContainer {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     flex-wrap: wrap;
     @include xxl {
       gap: 20px;
@@ -65,7 +65,6 @@
   .skillFullContainer {
     display: flex;
     margin-top: 200px;
-    margin-bottom: 200px;
 
     @include xxl {
       margin-top: 120px;
@@ -118,7 +117,7 @@
     }
   }
   .skillContainer {
-    margin-left: 20%;
+    margin-left: 10%;
     @include xxl {
       margin-left: 10%;
     }
@@ -146,7 +145,7 @@
   transform: scale(1.1) !important;
 }
 
-@for $i from 1 through 10 {
+@for $i from 1 through 15 {
   .hardSkill:nth-child(#{$i}) {
     animation-delay: #{$i * 110ms};
   }
