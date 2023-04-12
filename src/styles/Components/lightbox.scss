@@ -1,19 +1,19 @@
 .fslightbox-toolbar-button {
-  width: auto;
+  width: auto !important;
 }
 
 .fslightbox-toolbar {
-  background: none;
+  background: none !important;
 }
 .fslightbox-toolbar-button:nth-child(1) {
-  display: none;
+  display: none !important;
 }
 .fslightbox-slide-btn {
-  background: none;
+  background: none !important;
 }
 .projectPage svg {
-  width: 50px;
-  height: 50px;
-  min-width: 50px;
-  min-height: 50px;
+  width: 50px !important;
+  height: 50px !important;
+  min-width: 50px !important;
+  min-height: 50px !important;
 }

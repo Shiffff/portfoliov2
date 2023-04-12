@@ -37,13 +37,17 @@
 .contactPageContainer {
   display: flex;
   align-items: center;
-  height: 80vh;
-  @include xxl {
-    height: auto;
-    margin-top: 0;
+  margin-top: 200px;
+  @include xxxl {
+    margin-top: 100px;
   }
+  @include xxl {
+    margin-top: 0px;
+  }
+
   @include lg {
     flex-direction: column;
+    height: 70vh;
   }
 }
 .contactPageLeftPart {

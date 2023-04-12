@@ -104,7 +104,7 @@
   .hardSkillFullContainer {
     display: flex;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     @include xxl {
       margin-bottom: 55px;
     }
@@ -118,6 +118,9 @@
   }
   .skillContainer {
     margin-left: 10%;
+    @include xxl {
+      padding-bottom: 150px;
+    }
     @include xxl {
       margin-left: 10%;
     }
