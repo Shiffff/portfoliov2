@@ -15,6 +15,7 @@ const NavBar = () => {
 
   const handleClick = (index) => {
     setActiveIndex(index);
+    window.scrollTo(0, 0);
   };
 
   const links = [

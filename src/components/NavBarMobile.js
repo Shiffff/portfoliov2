@@ -14,9 +14,15 @@ const NavBarMobile = () => {
     setActiveIndex(currentIndex);
   }, []);
 
+  useEffect(() => {
+    const overFlowHidden = isActive ? "hidden" : "auto";
+    document.querySelector("html").style = "overflow:" + overFlowHidden;
+  }, [isActive]);
+
   const handleClick = (index) => {
     setActiveIndex(index);
     setIsActive(false);
+    window.scrollTo(0, 0);
   };
 
   const links = [
