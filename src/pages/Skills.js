@@ -145,6 +145,14 @@ const Skills = () => {
           name: "Flexibility",
           pic: "../flexibility.svg",
         },
+        {
+          name: "kindness",
+          pic: "../bienveillance.svg",
+        },
+        {
+          name: "autonomy",
+          pic: "../autonomy.svg",
+        },
       ],
     },
   ];
